@@ -1,7 +1,95 @@
-\documentclass{article}
+% for controlling the font size of text we can specify with parameters
+% 10pt,11pt,12pt. these are all our choices. these are the standart ways
+
+\documentclass[letterpaper,12pt]{book}
+\usepackage{fullpage}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+% \usepackage{xepersian}
+% better not to use but this package helps you control the margins of the page
+% \usepackage[top=5cm,bottom=10cm,left=0cm,right=1cm]{geometry}
+
+% this is my comment
+ 
+\author{Muhammad Karbalaee}
+\title{I am learning laTex for scientific usages}
+\date{January 18 2022}
+% this command is for specifying how much the indentation space be
+\setlength{\parindent}{5cm}
+\pagenumbering{arabic}
+\setcounter{page}{10}
 
 \begin{document}
-	Hello
-\end{document}
+	\maketitle
+	\tableofcontents
+	\section{intro}
+	\chapter{hell yeah}
+	\subsection{yes}
+	\subsubsection{title}
 
-+
+	 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus placerat augue dictum neque feugiat, eget facilisis lectus tristique. Aenean euismod id turpis quis ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In at ullamcorper mi. Nulla in fringilla orci, feugiat ornare nulla. Maecenas eget felis quis ligula venenatis pulvinar. Sed vehicula varius pellentesque. Donec vel lacus orci.
+	
+	\begin{itemize}
+		\item[+] m
+		\item n
+	\end{itemize}
+
+	\begin{enumerate}
+		\item m
+		\item n
+	\end{enumerate}
+
+	\begin{description}
+		\item jjjjjj jhoijoijoijioj
+	\end{description}
+	Quisque tincidunt imperdiet \ laoreet. Etiam sodales dapibus maximus. In elit dolor, blandit in dui non, ornare mollis nunc. Mauris sit amet nibh vestibulum, aliquet
+	\href{www.google.com}{gooog} 
+	massa non, congue massa. In ut vulputate elit. Suspendisse leo est, condimentum id nibh ac, pharetra tempor velit. Donec enim nisi, tempus vel pellentesque vitae, lobortis rhoncus massa. Ut faucibus lectus sed pellentesque condimentum. Vestibulum tempus nibh odio, tincidunt ultricies nunc rutrum at. Nunc sit amet metus vel nisi consectetur malesuada. Nulla nec pellentesque ipsum. Maecenas congue ac ex vitae rhoncus. Nunc quis libero ut turpis congue \\ pretium. \newpage
+	
+	\begin{table}
+		\begin{tabular}{|cc|c}
+			p & q & r \\
+			\hline
+			0 & 0 & 0
+		\end{tabular}
+		\caption{yeyeey}
+		\label{table}
+	\end{table}
+	\begin{tabular}{cc|c}
+		p & q & r \\
+		\hline
+		0 & 0 & 0
+	\end{tabular}
+	
+	\begin{center}
+			\noindent Fusce efficitur neque at neque fringilla, sit amet malesuada turpis euismod. Maecenas dolor mi, lacinia ac posuere vitae, finibus ac libero. Cras vestibulum sapien in nisl tristique, eget malesuada sem finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; \textit(jkjkjk )Pellentesque a scelerisque sapien, eu rhoncus urna. Ut pellentesque in nulla sed lacinia. Quisque in lacinia purus. Nunc sed nunc purus. Vestibulum semper dui purus, et faucibus enim pulvinar in. Etiam mattis eros eu justo porta, et laoreet urna sodales. Sed ut volutpat quam. In eget mauris ex. Nullam faucibus ex lectus, vitae congue elit pulvinar sed. Donec ullamcorper non lacus a   consequat. Curabitur id porttitor lacus. Pellentesque convallis risus ut tellus feugiat, vitae dapibus eros vestibulum. \vspace{5cm}
+	\end{center}
+
+	fgutf
+	\ref{table} in \pageref{table}
+	
+
+
+	\begin{center}
+		\noindent Fusce efficitur neque at neque fringilla, sit amet malesuada turpis euismod. Maecenas dolor mi, lacinia ac posuere vitae, finibus ac libero. Cras vestibulum sapien in nisl tristique, eget malesuada sem finibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; \textit(jkjkjk )Pellentesque a scelerisque sapien, eu rhoncus urna. Ut pellentesque in nulla sed lacinia. Quisque in lacinia purus. Nunc sed nunc purus. Vestibulum semper dui purus, et faucibus enim pulvinar in. Etiam mattis eros eu justo porta, et laoreet urna sodales. Sed ut volutpat quam. In eget mauris ex. Nullam faucibus ex lectus, vitae congue elit pulvinar sed. Donec ullamcorper non lacus a   consequat. Curabitur id porttitor lacus. Pellentesque convallis risus ut tellus feugiat, vitae dapibus eros vestibulum. \vspace{5cm}
+	\end{center}	
+
+	Quisque dictum augue ac mauris accumsan ornare. Donec ultricies sollicitudin orci eu condimentum. Suspendisse auctor cursus turpis nec congue. Pellentesque egestas, nunc non rutrum cursus, sem diam varius orci, nec elementum metus nisl id massa. Aliquam varius, dolor imperdiet molestie eleifend, nisl tellus venenatis lectus, in luctus ligula dui nec metus. Quisque suscipit libero vel gravida mollis. Nulla sagittis eros non urna tempor aliquet. Proin ac massa in leo accumsan sagittis. Nam elementum nibh ut urna tempor finibus. Donec \hspace{6cm} ut mi velit. Nullam tempor nec mauris  eu convallis. Morbi sagittis tincidunt velit, quis dignissim dui. In luctus sit amet libero eget gravida. Cras felis lacus, vehicula viverra tristique ut, ultrices sit amet dui.
+	
+	\includegraphics[scale=0.5]{./pics/logo.png}
+	
+	Praesent pretium, sapien id tempor pellentesque, ante purus feugiat augue, nec lobortis dui lectus eget orci. Aenean egestas sit amet leo ut 
+	\begin{figure}[h]
+		\centering
+		\includegraphics[scale=0.5]{./pics/logo.png}
+		\caption{figure 1}
+	\end{figure}
+
+	\begin{wrapfigure}{l}{0.6\textwidth}
+		\includegraphics[scale=0.5]{./pics/logo.png}
+		\caption{we have caption here too}
+	\end{wrapfigure}
+	finibus. Mauris viverra, massa nec tincidunt facilisis, sem metus gravida quam, id iaculis dolor elit at elit. Cras pharetra malesuada odio sed luctus. Nulla imperdiet sed ipsum vitae pharetra. Cras consequat tellus ut lectus ultrices, blandit accumsan augue maximus. Phasellus nec nibh eu tellus iaculis condimentum vel id dolor. Curabitur pulvinar pretium dignissim. Pellentesque semper, ante et pharetra rhoncus, justo nisi cursus libero, sed sodales lacus ex et felis. Vivamus eget libero sed ipsum feugiat fermentum. Morbi tellus libero, placerat eu turpis in, ornare lobortis ex. Integer et aliquet purus, vitae consectetur orci. Aliquam id gravida felis. Sed in massa eros. Pellentesque enim purus, aliquet et nisl et, elementum dignissim ante. Sed ut tristique nunc.
+\end{document}
